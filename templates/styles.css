@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    width: 100%;
+    border-radius: 3px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    color: #000;
+    border-radius: 5px;
+}
+
+.inputContainer {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: calc(100% - 22px); 
+}
+
+.InputLabel {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+li:hover {
+    background-color: #ddd;
+}
+
+.delete {
+    float: right;
+    cursor: pointer;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.toggle {
+    display: block;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    position: relative;
+}
+
+.toggle::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 1px;
+    left: 1px;
+    transition: transform 0.2s ease;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.date-time {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+input:checked + .toggle {
+    background-color: #2196F3;
+}
+
+input[type="checkbox"]:checked + .toggle::after {
+    transform: translateX(20px);
+}
+
+
